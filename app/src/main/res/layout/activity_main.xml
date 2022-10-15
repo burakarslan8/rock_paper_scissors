@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:text="COMPUTER SCORE"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:typeface="normal">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/computerScore"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:textColor="#3F51B5"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:visibility="visible">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:text="PLAYER SCORE"
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/playerScore"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:textColor="#3F51B5"
+                android:textSize="50sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/computersChoice"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold">
+
+    </TextView>
+    <TextView
+        android:id="@+id/textWinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:textColor="#FF0000"
+        android:textSize="50sp"
+        android:textStyle="bold">
+
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="2">
+
+        <Button
+            android:id="@+id/btnRock"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-smallcaps"
+            android:onClick="mainBtnClick"
+            android:text="ROCK"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnPaper"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-smallcaps"
+            android:onClick="mainBtnClick"
+            android:text="PAPER"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnScissors"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-smallcaps"
+            android:onClick="mainBtnClick"
+            android:text="SCISSORS"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>
